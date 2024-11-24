@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Bienvenido a tu creador de encuestas favorito</h1>    
+    <script>
+    function calcularIMC() {
+    const peso = parseFloat(prompt("Por favor, ingrese su peso (kg):"));
+  const altura = parseFloat(prompt("Por favor, ingrese su altura (m):"));
+
+  const imc = peso / (altura * altura);
+
+  console.log(`Su IMC es: ${imc.toFixed(2)}`);
+
+  if (imc < 18.5) {
+    console.log("Usted se encuentra por debajo del peso normal.");
+  } else if (imc < 25) {
+    console.log("Usted se encuentra en el rango de peso normal.");
+  } else if (imc < 30) {
+    console.log("Usted tiene sobrepeso.");
+  } else {
+    console.log("Usted tiene obesidad.");
+  }
+}
+
+calcularIMC();
+
+    </script>
+</body>
+</html>
